@@ -1,0 +1,14 @@
+package com.softedge.main;
+
+public class NotificationService 
+{
+	public void sendMsgString(String toUser,String msgBody)
+	{
+		
+		
+		System.out.println();
+		
+	}
+
+
+}

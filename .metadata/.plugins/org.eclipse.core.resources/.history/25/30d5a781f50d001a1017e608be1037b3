@@ -1,0 +1,19 @@
+package com.softedge.main;
+
+public class NotificationService 
+{
+	
+	private String email;
+	private String password;
+	private String provider;
+	
+	public void sendMsgString(String toUser,String msgBody)
+	{
+		
+		
+		System.out.println();
+		
+	}
+
+
+}

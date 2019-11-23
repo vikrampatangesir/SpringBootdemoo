@@ -1,14 +1,25 @@
 package com.softedge.main;
 
-public class Mycontroller {
+import javax.management.Notification;
 
-	public Mycontroller() {
-		// TODO Auto-generated constructor stub
-	}
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+@RestController
+public class Mycontroller
+{
 
+	User user=new User("vikram", 20, "vikram@gmail.com");
+	
+	@Autowired
+	NotificationService notification;
+	
+    @GetMapping("/test")
+	public User getGreeting()
+	{
+		return  user;
+		
 	}
 
 }

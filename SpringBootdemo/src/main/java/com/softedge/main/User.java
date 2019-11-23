@@ -18,7 +18,8 @@ public class User {
 
 
 
-	public String getName() {
+	public String getName() 
+	{
 		return name;
 	}
 

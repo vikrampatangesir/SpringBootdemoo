@@ -1,0 +1,16 @@
+package com.softedge.main;
+
+import org.springframework.web.bind.annotation.GetMapping;
+
+public class Mycontroller
+{
+
+	User user=new User("vikram", 20, "vikram@gmail.com");	
+    @GetMapping("/test")
+	public User getGreeting()
+	{
+		return  user;
+		
+	}
+
+}

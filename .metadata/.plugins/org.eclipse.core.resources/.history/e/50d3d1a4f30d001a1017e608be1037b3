@@ -1,0 +1,9 @@
+package com.softedge.main;
+
+public class NotificationService {
+
+	public NotificationService() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

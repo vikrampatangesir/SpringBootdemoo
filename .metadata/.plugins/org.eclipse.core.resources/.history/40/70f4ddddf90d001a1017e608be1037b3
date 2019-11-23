@@ -1,0 +1,31 @@
+package com.softedge.main;
+
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Service;
+
+@Service
+public class NotificationService 
+{
+	
+	 @Value("${email.username}")
+	  private String email;
+	 @Value("${email.password}")
+	  private String password;
+	 @Value("${email.provider}")
+	  private String provider;
+	
+	 @Value("${email.protocol}")
+	  private String protocol;
+	 
+	//getter & setter (old way)
+	
+	public void sendMsgString(String toUser,String msgBody)
+	{
+		
+		System.out.println("message sent to user:"+toUser);	
+		System.out.println("message sent to user:"+toUser);	
+		
+	}
+
+
+}

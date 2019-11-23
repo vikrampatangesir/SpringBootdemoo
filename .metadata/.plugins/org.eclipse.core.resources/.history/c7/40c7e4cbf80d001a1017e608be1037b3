@@ -1,0 +1,25 @@
+package com.softedge.main;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class NotificationService 
+{
+	
+	
+	  private String email;
+	  private String password;
+	  private String provider;
+	  private String protocol;
+	 
+	//getter & setter (old way)
+	
+	public void sendMsgString(String toUser,String msgBody)
+	{
+		
+		System.out.println("message sent to user:"+toUser);	
+		
+	}
+
+
+}
